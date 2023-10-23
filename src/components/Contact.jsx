@@ -34,15 +34,18 @@ const Contact = () => {
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // 'service_t11zqgg',
+        // 'template_iisctnr',
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Piyush",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "guptapiyush210427@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // 'GdvCwug-9S8kOfffQ'
       )
       .then(
         () => {
